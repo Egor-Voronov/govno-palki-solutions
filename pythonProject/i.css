@@ -1,0 +1,42 @@
+body {
+
+}
+
+.container {
+    width: 900px;
+}
+
+.skeleton-div {
+    animation-name: skeletonAnimation;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation: skeleton 1s ease-in-out forwards infinite;
+    animation: skeleton 1s ease-in-out forwards infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+
+    height: 500px;
+    width: 500px;
+
+    color: #eee!important;
+    background-color: #eee!important;
+}
+
+@-webkit-keyframes skeleton {
+  0% {
+    opacity: 0.2;
+  }
+  85%, 100% {
+    opacity: 1;
+  }
+}
+
+@keyframes skeleton {
+  0% {
+    opacity: 0.2;
+  }
+  85%, 100% {
+    opacity: 1;
+  }
+}
